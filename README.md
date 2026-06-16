@@ -1,14 +1,14 @@
-# Base Developer Kit
 
-Complete resources, templates, and tools for building on **Base** (Coinbase Ethereum L2).
+---
 
-## What's Inside
-- Smart contract templates (Solidity)
-- Frontend integration examples (Next.js + wagmi + viem)
-- Useful scripts and tools
-- Deployment guides
-- Best practices for Base
+### Commit #10: .env.example
 
-Made for the **Builders & Founders** community.
+1. Create new file: `.env.example`
+2. Paste:
 
-⭐ Star this repo if you're building on Base!
+```env
+# Base Sepolia RPC (Testnet)
+BASE_SEPOLIA_RPC_URL=https://sepolia.base.org
+
+# Your Wallet Private Key (Never commit real keys!)
+PRIVATE_KEY=your_private_key_here

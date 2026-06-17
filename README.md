@@ -1,14 +1,28 @@
+# Base Developer Kit
 
----
+Complete resources and starter templates for building on **Base** (Coinbase L2).
 
-### Commit #10: .env.example
+## 📋 Table of Contents
+- [Smart Contracts](#smart-contracts)
+- [Frontend](#frontend)
+- [Setup](#setup)
+- [Deployment](#deployment)
 
-1. Create new file: `.env.example`
-2. Paste:
+## Smart Contracts
+- `Counter.sol` - Basic counter with events
+- `SimpleStorage.sol` - Store and retrieve values
 
-```env
-# Base Sepolia RPC (Testnet)
-BASE_SEPOLIA_RPC_URL=https://sepolia.base.org
+## Frontend
+Next.js + wagmi + RainbowKit starter (in `/frontend`)
 
-# Your Wallet Private Key (Never commit real keys!)
-PRIVATE_KEY=your_private_key_here
+## Quick Start
+```bash
+# Clone repo
+git clone https://github.com/YOUR-USERNAME/base-developer-kit.git
+cd base-developer-kit
+
+# Backend (Hardhat)
+npm install
+
+# Frontend
+cd frontend && npm install

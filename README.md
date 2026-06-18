@@ -1,13 +1,12 @@
-## 📦 Smart Contracts Included
+# Base Developer Kit
 
-| Contract          | Description                          | Use Case                  |
-|-------------------|--------------------------------------|---------------------------|
-| Counter.sol       | Simple increment/decrement           | Learning basics           |
-| SimpleStorage.sol | Store & retrieve data                | State management          |
-| BaseToken.sol     | ERC20 Token with mint                | Token projects            |
-| BaseNFT.sol       | ERC721 NFT with mint                 | NFT collections           |
+![Stars](https://img.shields.io/github/stars/YOURUSERNAME/base-developer-kit?style=social)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## Next Steps
-- Add more contracts (Bridge, Staking, DAO, etc.)
-- Complete frontend dApp examples
-- Add deployment guides
+Complete starter kit and educational resources for building on **Base** — Coinbase's Ethereum L2.
+
+## Why Use This Kit?
+- Learn by doing with real examples
+- Ready-to-use contracts and frontend
+- Configured for Base + Base Sepolia
+- Made for **Builders & Founders**

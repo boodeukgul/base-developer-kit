@@ -1,12 +1,20 @@
 # Base Developer Kit
 
-![Stars](https://img.shields.io/github/stars/YOURUSERNAME/base-developer-kit?style=social)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+A complete collection of smart contracts, frontend examples, and tools for building on **Base**.
 
-Complete starter kit and educational resources for building on **Base** — Coinbase's Ethereum L2.
+## ✨ Features
+- Multiple Solidity contract examples
+- Next.js + wagmi frontend starter
+- Hardhat + Base network configuration
+- Deployment and security guides
 
-## Why Use This Kit?
-- Learn by doing with real examples
-- Ready-to-use contracts and frontend
-- Configured for Base + Base Sepolia
-- Made for **Builders & Founders**
+## 📂 What's Inside
+- `/contracts` — ERC20, ERC721, Staking, DAO, Airdrop, etc.
+- `/frontend` — Wallet connection, NFT & Staking pages
+- `/scripts` — Deployment helpers
+- Multiple markdown guides
+
+## Quick Start
+```bash
+git clone https://github.com/YOUR-USERNAME/base-developer-kit.git
+cd base-developer-kit

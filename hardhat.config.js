@@ -5,11 +5,14 @@ module.exports = {
   networks: {
     base: {
       url: "https://mainnet.base.org",
-      accounts: [] // Add your private key here when deploying
+      accounts: [] 
     },
     baseSepolia: {
       url: "https://sepolia.base.org",
       accounts: [] 
+    },
+    hardhat: {
+      chainId: 31337
     }
   },
   paths: {

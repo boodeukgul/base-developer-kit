@@ -1,34 +1,33 @@
 'use client';
 
-import { useAccount, useConnect, useDisconnect } from 'wagmi';
-import { InjectedConnector } from 'wagmi/connectors/injected';
+import Link from 'next/link';
 
 export default function Home() {
-  const { address, isConnected } = useAccount();
-  const { connect } = useConnect({
-    connector: new InjectedConnector(),
-  });
-  const { disconnect } = useDisconnect();
-
   return (
-    <div className="min-h-screen bg-black text-white p-8">
-      <h1 className="text-4xl font-bold mb-8">Base Developer Kit</h1>
-      
-      {isConnected ? (
-        <div>
-          <p>Connected: {address}</p>
-          <button onClick={() => disconnect()} className="mt-4 px-6 py-3 bg-red-600 rounded-lg">
-            Disconnect
-          </button>
+    <div className="min-h-screen bg-black text-white">
+      <div className="max-w-4xl mx-auto px-8 py-20 text-center">
+        <h1 className="text-6xl font-bold mb-6">Welcome to Base Developer Kit</h1>
+        <p className="text-2xl text-gray-400 mb-12">
+          Learn • Build • Ship on Base
+        </p>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+          <Link href="/nft" className="bg-zinc-900 p-8 rounded-3xl hover:bg-zinc-800 transition">
+            <h3 className="text-2xl font-semibold mb-3">NFTs</h3>
+            <p className="text-gray-400">Mint and manage NFTs</p>
+          </Link>
+          
+          <Link href="/stake" className="bg-zinc-900 p-8 rounded-3xl hover:bg-zinc-800 transition">
+            <h3 className="text-2xl font-semibold mb-3">Staking</h3>
+            <p className="text-gray-400">Stake and earn rewards</p>
+          </Link>
+          
+          <div className="bg-zinc-900 p-8 rounded-3xl hover:bg-zinc-800 transition">
+            <h3 className="text-2xl font-semibold mb-3">Contracts</h3>
+            <p className="text-gray-400">Ready-to-use Solidity examples</p>
+          </div>
         </div>
-      ) : (
-        <button 
-          onClick={() => connect()}
-          className="px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-xl text-lg font-medium"
-        >
-          Connect Wallet
-        </button>
-      )}
+      </div>
     </div>
   );
 }

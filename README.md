@@ -1,20 +1,28 @@
-# Base Developer Kit
 
-A complete collection of smart contracts, frontend examples, and tools for building on **Base**.
+---
 
-## ✨ Features
-- Multiple Solidity contract examples
-- Next.js + wagmi frontend starter
-- Hardhat + Base network configuration
-- Deployment and security guides
+### Commit #43: Issue Template
 
-## 📂 What's Inside
-- `/contracts` — ERC20, ERC721, Staking, DAO, Airdrop, etc.
-- `/frontend` — Wallet connection, NFT & Staking pages
-- `/scripts` — Deployment helpers
-- Multiple markdown guides
+1. Create new file: `.github/ISSUE_TEMPLATE/bug_report.md`
+2. Paste this:
 
-## Quick Start
-```bash
-git clone https://github.com/YOUR-USERNAME/base-developer-kit.git
-cd base-developer-kit
+```markdown
+---
+name: Bug Report
+about: Create a report to help improve the kit
+title: ''
+labels: bug
+assignees: ''
+
+---
+
+**Describe the bug**
+A clear description of what the bug is.
+
+**Steps to reproduce**
+1. Go to '...'
+2. Click on '....'
+3. See error
+
+**Expected behavior**
+What should happen.
